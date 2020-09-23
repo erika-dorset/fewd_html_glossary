@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Form example containing all form control inputs-->
+<html>
+    <head>
+        <title>Forms</title>
+
+        <!-- Using external CSS -->
+        <link href="../../css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <!-- The main body -->
+    <body>
+        <!-- Form element opening tag -->
+        <form>
+        <!-- Heading -->
+        <h1>Create a new user</h1>
+        <!-- Line -->
+        <hr />
+        <!-- This element groups form controls together -->
+        <fieldset>
+        <!-- Caption of the grouped form elements -->
+        <legend>Contact Details</legend>
+            <!-- <label> elements allows form to be accessible to vision-impaired users -->
+            <label>Username:
+                <br />
+                <input type=”text” name=”username” maxlength="15" />
+            </label>
+            <!-- Line break -->
+            <br />
+            <label>Password:
+                <br />
+                <input type="password" name="password" maxlength="10" />
+            </label>
+            <!-- Line break -->
+            <br />
+            <label>About you:
+                <br />
+                <textarea name="about" rows="4" cols="50">Enter something about you...</textarea>
+            </label>
+            <!-- End of grouped elements -->
+            </fieldset>
+            
+            <!-- Individual elements -->
+            <p>
+                <b>Please select your hair colour:</b>
+                <!-- Line Break -->
+                <br />
+                <!-- Radio button inputs. User can only select one. By having the "checked" attribute, the first input element is selected, otherwise it would be empty -->
+                <input type="radio" name="hair_color" value="black" checked="checked" />Black
+                <input type="radio" name="hair_color" value="pink" />Pink
+                <input type="radio" name="hair_color" value="blue" />Blue
+                <input type="radio" name="hair_color" value="yellow" />Yellow
+                <input type="radio" name="hair_color" value="brown" />Brown
+                <input type="radio" name="hair_color" value="blonde" />Blonde
+                <input type="radio" name="hair_color" value="other" />Other
+            </p>
+            <p>
+                <b>Please select your favorite music genre:</b>
+                <!-- Line Break -->
+                <br />
+                <!-- Checkbox inputs. User can select multiple genres and uncheck any specific one -->
+                <input type="checkbox" name="genre" value="rock" />Rock
+                <input type="checkbox" name="genre" value="pop" />Pop
+                <input type="checkbox" name="genre" value="classical" />Classical
+                <input type="checkbox" name="genre" value="country" />Country
+                <input type="checkbox" name="genre" value="metal" />Metal
+                <input type="checkbox" name="genre" value="synth" />Synth
+                <input type="checkbox" name="genre" value="other" />Other
+                
+            </p>
+            <p>
+                <b>What device do you use daily?</b>
+                <!-- Line Break -->
+                <br />
+                <!-- <select> element groups the different options together to provide a dropdown to the user. User can select one choice in this example -->
+                <select name="devices">
+                    <!-- All the options in this dropdown. There can be many options -->
+                    <option value="android">Android</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="macbook">MacBook</option>
+                    <option value="laptop">Other laptop</option>
+                    <option value="desktop">PC</option>
+                <!-- End of <select> element -->
+                </select>
+            </p>
+            <p>
+                <b>Please select all the skills applicable to you?</b>
+                <!-- Line Break -->
+                <br />
+                ( Hold CTRL to select multiple ) 
+                <!-- Line Break -->
+                <br />
+                <!-- <select> element used again in here however the user can choose multiple options. The "size" attribute shows how many options are first shown to the user -->
+                <select name="skills" size="3" multiple="multiline">
+                    <!-- All the options for this element. The SQL option is selected by default -->
+                    <option value="sql" selected="selected">SQL</option>
+                    <option value="java">Java</option>
+                    <option value="react">React</option>
+                    <option value="angular">Angular</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="linux">Linux</option>
+                    
+                <!-- End of <select> element -->
+                </select>
+            </p>
+            <p>
+                <b>Upload a profile picture:</b>
+                <!-- Line Break -->
+                <br />
+                <!-- File upload input type -->
+                <input type="file" name="profile_picture" /> <br /><br />
+            </p>
+            <!-- Line -->
+            <hr />
+            <p>
+            <b>Click any of the below to submit!</b>
+                <!-- Line Break -->
+                <br />
+                <br />
+                <!-- There are a few ways to display a submit button. The three bellow are examples -->
+                <!-- This is a regular submit form control which can be later styled using CSS -->
+                <input type="submit" value="Submit" />
+                <!-- Line Break -->
+                <br />
+                <!-- This is an image submit button with the "src" attribute containing the link the image we need -->
+                <input type="image" width="100" height="100" src="https://www.freepngimg.com/thumb/submit_button/25387-5-submit-button-clipart-thumb.png" />
+                <!-- Line Break -->
+                <br />
+                <!-- The button element can also be used. It allows more control on how a button appears -->
+                <button>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/412rXWdCJ7L.png"
+                         alt="add" width="20" height="20" />
+                    <!-- This is the text that will be beside the image -->
+                    Submit
+                <!--End of button element-->
+                </button>
+            </p>
+        <!-- Form element closing tag -->
+        </form>
+    <!-- End of body element -->
+    </body>
+</html>

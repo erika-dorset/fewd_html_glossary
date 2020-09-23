@@ -1,0 +1,69 @@
+/* This is all of the styling that will be done in the index.html file */
+/* Get rid of the default margin that the browser does */
+body {
+    margin:0;
+}
+
+/* Target the <ul> element in the navigation div */
+#navigation ul{
+    /* get rid of bulletpoints */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow is clipped and elements cant overflow */
+    overflow: hidden;
+    /* colour of the background */
+    background-color: #5f84ce;
+    /* position is always in place */
+    position: fixed;
+    top: 0;
+    /* takes 100% of the browser's page */
+    width: 100%;
+    /* adds a border */
+    border-bottom: 5px solid #4c6aa5;
+}
+
+/* Target all of the <li> elements in the navigation div */
+#navigation li{
+    /* position all of the li elements to the left */
+    float: left;
+    /* add a bottom border with a solid hex colour */
+    border-right: 1px solid #4c6aa5;
+}
+
+/* Target all the <a> elements in the <li> in the navigation div */
+#navigation li a{
+    /* Display this as a block */
+    display: block;
+    /* All text is white */
+    color: white;
+    /* align the text to be in the center */
+    text-align: center;
+    /* add some white space around */
+    padding: 24px 26px;
+    /* get rid of the link underline */
+    text-decoration: none;
+}
+
+/* Main container */
+.container{
+    /* set to be the full size of the browser page */
+    width: 100%;
+    height: 100%;
+    /* move a 100px down from the top margin */
+    margin-top: 100px;
+}
+
+/* Image div */
+#image{
+    /* Move left and make it 10% of the container */
+    float: left;
+    width: 10%;
+    padding: 5px;
+}
+
+/* Main text div */
+#main{
+    /* Change the size to be automatic which is reflected on the block before it (image) */
+    width: auto;
+}
