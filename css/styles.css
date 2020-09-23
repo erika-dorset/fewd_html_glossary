@@ -1,7 +1,10 @@
-/* This is all of the styling that will be done in the index.html file */
 /* Get rid of the default margin that the browser does */
 body {
     margin:0;
+}
+
+h1{
+    color: #4c6aa5;
 }
 
 /* Target the <ul> element in the navigation div */
@@ -27,8 +30,6 @@ body {
 #navigation li{
     /* position all of the li elements to the left */
     float: left;
-    /* add a bottom border with a solid hex colour */
-    border-right: 1px solid #4c6aa5;
 }
 
 /* Target all the <a> elements in the <li> in the navigation div */
@@ -40,30 +41,52 @@ body {
     /* align the text to be in the center */
     text-align: center;
     /* add some white space around */
-    padding: 24px 26px;
+    padding: 24px 50px;
     /* get rid of the link underline */
     text-decoration: none;
+}
+
+#navigation a:hover {
+  background-color: #A5B4D2;
+}
+
+#navigation a.active {
+  background-color: #4c6aa5;
+  color: white;
 }
 
 /* Main container */
 .container{
     /* set to be the full size of the browser page */
-    width: 100%;
+    width: 85%;
     height: 100%;
     /* move a 100px down from the top margin */
     margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Image div */
 #image{
-    /* Move left and make it 10% of the container */
-    float: left;
-    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
+    display: block;
 }
 
 /* Main text div */
 #main{
     /* Change the size to be automatic which is reflected on the block before it (image) */
     width: auto;
+}
+
+/* Style semantic tags */
+.semantic_tags{
+    font-size: 1.5em;
+    color: #5f84ce;
+}
+
+pre{
+    color: red;
+    font-weight: bold;
 }

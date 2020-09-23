@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Elements</title>
+	<!-- Using external CSS -->
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div id="navigation">
+		<!-- Navigation links leading to pages in the directory of the folder -->
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a class="active" href="#">Elements</a></li>
+			<li><a href="lists.html">Lists</a></li>
+			<li><a href="links.html">Links</a></li>
+		</ul>
+		<!-- End of navigation block -->
+	</div>
+	<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div class="container">
+		<!-- Main text content -->
+		<div id="main">
+			<h1> Elements </h1>
+			<hr />
+			<h1>This is the largest heading h1</h1>
+			<h2>This is a subheading h2 </h2>
+			<h3>This is a subheading h3 </h3>
+			<h4>This is a subheading h4 </h4>
+			<h5>This is a subheading h5 </h5>
+			<h6>This is the smallest heading h6 </h6>
+			<br/>
+			<h1>Semantic tags for Text</h1>
+			<p> The <b class="semantic_tags">&lt;p&gt;</b> element is used for paragraphs. You can
+				make text <b>Bold</b> by using the <b class="semantic_tags">&lt;b&gt;</b> element and <i>italic</i>
+				by using the <b class="semantic_tags">&lt;i&gt;</b> element. <br/><br/>
+				<br/>For mathematical concepts concepts or suffixes of dates you can use the
+				<b class="semantic_tags">&lt;sup&gt;</b> element.
+				<br/><br/>
+				<i>For example: </i>
+				<pre>&lt;p&gt;Today is 23&lt;sup&gt;rd&lt;/sup&gt; of September 2020. &lt;p&gt;</pre>
+				Result: Today is 23<sup>rd</sup> of September 2020.
+				<br/><br/><br/>
+                You can add a line break by using the <b class="semantic_tags">&lt;br/&gt;</b> element. <br/>
+                And a create a break between themes (line) by using the <b class="semantic_tags">&lt;hr/&gt;</b> element.
+				<br/><br/>
+                There is also an element which is used for chemical formulas.
+				<br/><br/>
+				<i>For example: </i>
+				<pre>&lt;p&gt;You should drink your H&lt;sub&gt;2&lt;/sub&gt;O because it's good for you! &lt;p&gt;</pre>
+				Result: You should drink your H<sub>2</sub>O because it's good for you!
+				<br/><br/></p>
+				<h1>Semantic Markup</h1>
+				<p>
+					Semantic Markup doesn't affect the structure of web pages however it adds extra information that
+					different browsers will interpret.
+					<br/><br/>
+					<b class="semantic_tags">&lt;strong&gt;</b> Shows that the content has strong importance (Makes the
+					text bold).
+					<br/><br/><i>For example: </i>
+					<pre>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text. &lt;p&gt;</pre>
+					Result: This is <strong>important</strong> text.
+					<br/><br/><br/>
+
+					<b class="semantic_tags">&lt;em&gt;</b> Emphasis that subtly changes the meaning of a sentence.
+					Browsers show in italic by default.
+					<br/><br/><i>For example: </i>
+					<pre>&lt;p&gt;Let's make this text &lt;em&gt;italic&lt;/em&gt;... &lt;p&gt;</pre>
+					Result: Let's make this text <em>italic</em> ...
+					<br/><br/>
+
+                 You can use <b class="semantic_tags">&lt;blockquote&gt;</b> to add long quotations.
+					And <b class="semantic_tags">&lt;cite&gt;</b> for references. The browser will render it in italics.
+					For the blockquote opening tag make sure to use the cite="URL" attribute to specify where the source
+					is from.
+					<br/><br/><i>For example: </i>
+					<pre>&lt;blockquote cite="https://blog.hatchcoding.com/6-great-quotes-about-the-power-of-coding"&gt;<br/><br/>I think it's fair to say that personal computers have become the most empowering tool we've ever created. <br/>They're tools of communication, they're tools of creativity, <br/>and they can be shaped by their user.<br/><br/>&lt;cite&gt;- Bill Gates&lt;/cite&gt;<br/>&lt;/blockquote&gt;</pre>
+
+					Result: <blockquote cite="https://blog.hatchcoding.com/6-great-quotes-about-the-power-of-coding">
+						I think it's fair to say that personal computers have become the most empowering tool we've
+						ever created. They're tools of communication, they're tools of creativity, and they can be
+						shaped by their user.<br/><cite>- Bill Gates </cite>
+					</blockquote>
+					<br/><br/>
+
+					<b class="semantic_tags">&lt;q&gt;</b> Is used for short quotes.
+					<br/><br/><i>For example: </i>
+					<pre>&lt;q&gt;Everybody should learn to program a computer, because it teaches you how to think.&lt;/q&gt; - Steve Jobs</pre>
+					Result:
+					<q cite="https://blog.hatchcoding.com/6-great-quotes-about-the-power-of-coding">Everybody should learn to program a computer, because it teaches you how to think.</q>
+					- Steve Jobs
+					<br/><br/><br/>
+
+					<b class="semantic_tags">&lt;abbr&gt;</b> Is used for abbreviations or acronyms.You need to use the
+					title="value" attribute
+					to specify what the abbreviation stands for.
+					<br/><br/><i>For example: </i>
+					<pre>&lt;p&gt;Hover over &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt; to see what it stands for! &lt;p&gt;</pre>
+					Result: Hover over <abbr title="Hypertext Markup Language">HTML</abbr> to see what it stands for!
+					<br/><br/><br/>
+
+					<b class="semantic_tags">&lt;address&gt;</b> Element defines the contact information of the author.
+					By using the href="mailto:email" attribute will open a default mail program, create new message with
+					the TO field already filled out.
+					<br/><br/><i>For example: </i>
+					<pre>&lt;address&gt;Written by &lt;a href="mailto:email@example.com"&gt;Erika Volodko&lt;/a&gt;.&lt;br/&gt;Visit us at:&lt;br/&gt;Example.com&lt;br/&gt;Box 564, Disneyland&lt;br/&gt;USA
+                </pre>
+					Result: <address>
+						Written by <a href="mailto:email@example.com">Erika Volodko</a>.<br>
+                    Visit us at:<br>
+                    Example.com<br>
+                    Box 564, Disneyland<br>
+                    USA
+                    </address>
+						<br/><br/>
+
+						<b class="semantic_tags">&lt;ins&gt;</b> Shows inserted content while
+						<b class="semantic_tags">&lt;del&gt;</b> shows deleted content.
+						<br/><br/><i>For example: </i>
+						<pre>&lt;p&gt;This text has been &lt;ins&gt;inserted&lt;/ins&gt; while this text has been &lt;del&gt;deleted&lt;/del&gt;.&lt;p&gt;</pre>
+						Result: This text has been <ins>inserted</ins> while this text has been <del>deleted</del>.
+						<br/><br/><br/>
+
+						<b class="semantic_tags">&lt;s&gt;</b> Indicates that something isnt relevant but should still
+						be there.
+						<br/><br/><i>For example: </i>
+						<pre>&lt;p&gt;This text isnt &lt;s&gt; relevant &lt;/s&gt; but should still be there.&lt;/p&gt;</pre>
+						Result: This text isnt <s>relevant</s> but should still be there.
+						<br/><br/></p>
+
+		</div>
+		<!-- End of container block -->
+	</div>
+</body>
+
+</html>

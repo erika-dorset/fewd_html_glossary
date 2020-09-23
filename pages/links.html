@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Links</title>
+	<!-- Using external CSS -->
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div id="navigation">
+		<!-- Navigation links leading to pages in the directory of the folder -->
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="elements.html">Elements</a></li>
+			<li><a href="lists.html">Lists</a></li>
+			<li><a class="active" href="#">Links</a></li>
+		</ul>
+		<!-- End of navigation block -->
+	</div>
+	<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div class="container">
+		<!-- Main text content -->
+		<div id="main">
+			<h1> Links </h1>
+			<hr />
+			<p>
+				<b class="semantic_tags">&lt;a&gt;</b> Anything inside can be clicked on. Use the href="value" attribute
+				in the opening tag to specify the URL value.
+
+				<i>For example: </i>
+				<pre>&lt;a href="../index.html"&gt;Click here to go to index.html&lt;/a&gt;</pre>
+				Result: <a href="../index.html">Click here to go to index.html</a>
+				<br/><br/><br/>
+
+				<h1> Directory Structure </h1>
+				Your website contains the root folder and the files that are inside relationships - parent, child,
+				grandchild. <br/><br/>
+                Same Folder - exact file name<br/>
+                Child Folder - name of child folder/filename<br/>
+                Parent Folder - ../index.html<br/><br/>
+                Make sure that you <b>always</b> have the correct URL path set in the href attribute.
+				<br/><br/><br/>
+				<b class="semantic_tags">target="_blank"</b> attribute opens a link in a new window/tab.<br/><br/>
+
+				<i>For example: </i>
+				<pre>&lt;a href="../index.html" target="_blank"&gt;Click here to go to index.html&lt;/a&gt;</pre>
+				Result: <a href="../index.html" target="_blank">Click here to go to index.html in a new tab.</a>
+				<br/><br/><br/>
+
+				<h1> Linking to a specific part of the page </h1>
+				An anchor link is a link, which allows the users to flow through a website page. It helps to scroll and
+				skim-read easily. A named anchor can be used to link to a different part of the same page (like quickly
+				navigating) or to a specific section of another page.
+				<br/><br/>
+				<h2 id="top"> Anchor Links </h2>
+				<a href="#first_column">First Column</a><br/>
+				<a href="#second_column">Second Column</a><br/>
+				<a href="#third_column">Third Column</a><br/>
+				<a href="#fourth_column">Fourth Column</a><br/><br/>
+
+				<h2 id="first_column">First Column</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.Lorem Ipsum is
+					simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.</p>
+
+				<h2 id="second_column">Second Column</h2>
+				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.Lorem Ipsum is
+					simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.</p>
+
+				<h2 id="third_column">Third Column</h2>
+				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.Lorem Ipsum is
+					simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.</p>
+
+				<h2 id="fourth_column">Fourth Column</h2>
+				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.Lorem Ipsum is
+					simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+					and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+					leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+					with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+					publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established
+					fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+					opposed to using 'Content here, content here', making it look like readable English.</p>
+				<br/>
+
+				<p><a href="#top">Back to First Column</a></p>
+
+				<h3>More information available at : <a
+						href="https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html">Click
+						Here</a></h3>
+				<hr />
+				Code:<br/>
+				<pre>&lt;h2 id="top"&gt; Anchor Links &lt;/h2&gt;<br/>&lt;a href="#first_column"&gt;First Column&lt;/a&gt;&lt;br/&gt;<br/>&lt;a href="#second_column"&gt;Second Column &lt;/a&gt; &lt;br/&gt;<br/>&lt;a href="#third_column"&gt;Third Column &lt;/a&gt;&lt;br/&gt;<br/>&lt;a href="#fourth_column"&gt; Fourth Column &lt;/a&gt;&lt;br/&lt;br/&gt;<br/><br/>&lt;h2 id="first_column"&gt;First Column&lt;/h2&gt;<br/>&lt;p>Lorem Ipsum is simply dummy text of...&lt;/p&gt;<br/>&lt;h2 id="second_column"&gt;Second Column&lt;/h2&gt;<br/>&lt;p> Lorem Ipsum is simply dummy text of...&lt;/p&gt;<br/>&lt;h2 id="third_column"&gt;Third Column&lt;/h2&gt;<br/>&lt;p Lorem Ipsum is simply dummy text of...&lt;/p&gt;<br/>&lt;h2 id="fourth_column"&gt;Fourth Column&lt;/h2&gt;<br/>&lt;p&gt; Lorem Ipsum is simply dummy text of...&lt;/p&gt;&lt;br/&gt;<br/><br/>&lt;p&lt;a href="#top">Back to First Column&lt;/a>&lt;/p&gt;
+                </pre>
+
+			</p>
+		</div>
+		<!-- End of container block -->
+	</div>
+</body>
+
+</html>

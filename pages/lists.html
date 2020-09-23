@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Lists</title>
+	<!-- Using external CSS -->
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div id="navigation">
+		<!-- Navigation links leading to pages in the directory of the folder -->
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="elements.html">Elements</a></li>
+			<li><a class="active" href="#">Lists</a></li>
+			<li><a href="links.html">Links</a></li>
+		</ul>
+		<!-- End of navigation block -->
+	</div>
+	<!-- Adding a div element with an id attribute styled in the external css file -->
+	<div class="container">
+		<!-- Main text content -->
+		<div id="main">
+			<h1> Lists </h1>
+			<hr />
+			<p>
+				There are 2 most common types of lists:<br/><br/>
+				<b class="semantic_tags">&lt;ol&gt;</b> - Ordered Lists<br/>
+				<b class="semantic_tags">&lt;ul&gt;</b> - Unordered Lists
+				<br/><br/>
+                The list items will be marked with bullets (small black circles) by default for an unordered list and numbered for an ordered list.
+
+				<h2>An Ordered HTML List</h2>
+				<ol>
+					<li>Coffee</li>
+					<li>Tea</li>
+					<li>Milk</li>
+				</ol>
+
+				<h2>An Unordered HTML List</h2>
+				<ul>
+					<li>Coffee</li>
+					<li>Tea</li>
+					<li>Milk</li>
+				</ul>
+				<br/>
+                Code:<br/>
+				<pre>&lt;h2&gt;An Ordered HTML List &lt;/h2&gt;<br/>&lt;ol&gt;<br/>&lt;li&gt; Coffee &lt;/li&gt; <br/>&lt;li&gt; Tea &lt;/li&gt; <br/>&lt;li&gt; Milk &lt;/li&gt;<br/>&lt;/ol&gt; <br/><br/>&lt;h2&gt;An Uordered HTML List &lt;/h2&gt;<br/>&lt;ul&gt;<br/>&lt;li&gt; Coffee &lt;/li&gt; <br/>&lt;li&gt; Tea &lt;/li&gt; <br/>&lt;li&gt; Milk &lt;/li&gt;<br/>&lt;/ul&gt;
+                </pre>
+			</p>
+			<h1>Definition List</h1>
+			<p>
+				The <b class="semantic_tags">&lt;dl&gt;</b> tag defines a description list. <br/><br/>
+
+					The &lt;dl&gt; tag is used in conjunction with &lt;dt&gt; (defines terms/names) and
+						&lt;dd&gt; (describes each term/name).
+
+			</p> <br/>
+				<p>Here is an example of a definition list:</p>
+				<dl>
+					<dt>Coffee</dt>
+					<dd>Black hot drink</dd>
+					<dt>Milk</dt>
+					<dd>White cold drink</dd>
+				</dl>
+				<br/><br/>
+                Code:<br/>
+				<pre>&lt;p&gt;Here is an example of a definition list:&lt;/p&gt;<br/>&lt;dl&gt;<br/>&lt;dt&gt; Coffee &lt;/dt&gt;<br/>&lt;dd&gt; Black hot drink &lt;/dd&gt;<br/>&lt;dt&gt; Milk &lt;/dt&gt;<br/>&lt;dd&gt; White cold drink &lt;/dd&gt;<br/>&lt;/dl&gt;</pre>
+		</div>
+		<!-- End of container block -->
+	</div>
+</body>
+
+</html>
